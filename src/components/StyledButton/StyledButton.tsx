@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 
 interface StyledButtonProps {
     children: ReactNode
+    
 
 }
 
