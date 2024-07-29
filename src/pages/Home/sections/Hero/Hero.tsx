@@ -13,11 +13,14 @@ const Hero = () => {
         height: "100vh",
         display: "flex",
         alignItems: "center",
-        [theme.breakpoints.up('xs')]: { // <= mobile
-            paddingTop: "100px",
+        [theme.breakpoints.up('xs')]: { // mobile
+            paddingTop: "150px",
 
         },
-        [theme.breakpoints.up('md')]: { // >=mobile
+        [theme.breakpoints.up('sm')]: { // tablets
+            paddingTop: "250px", 
+        },
+        [theme.breakpoints.up('md')]: { // desktop
             paddingTop: "0",
         }
     }))
@@ -25,7 +28,13 @@ const Hero = () => {
     const StyledImg = styled("img")(({ theme }) => ({
         width: "75%",
         borderRadius: "50%",
-        border: `1px solid ${theme.palette.primary.contrastText}`
+        border: `1px solid ${theme.palette.primary.contrastText}`,
+        [theme.breakpoints.up('sm')]: { // tablets
+            width: "50%", 
+        },
+        [theme.breakpoints.up('md')]: { // desktop
+            width:"75%",
+        }
     }))
 
     return (

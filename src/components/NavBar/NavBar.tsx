@@ -1,24 +1,51 @@
-import { AppBar, MenuItem, Toolbar, styled } from "@mui/material"
-
+// src/components/NavBar.tsx
+import React from 'react';
+import { AppBar, MenuItem, Toolbar, styled, useMediaQuery, useTheme, Box } from '@mui/material';
+import { slide as Menu } from 'react-burger-menu';
+import './HamburguerMenu.css';
 
 const NavBar = () => {
-    const StyledToobar = styled(Toolbar)(() => ({
-        display: "flex",
-        justifyContent: "space-evenly",
-        
-    }))
+  const StyledToolbar = styled(Toolbar)(() => ({
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+  }));
 
-    return (
-        <>
-            <AppBar position="absolute">
-                <StyledToobar>
-                    <MenuItem>About</MenuItem>
-                    <MenuItem>Skills</MenuItem>
-                    <MenuItem>Projects</MenuItem>
-                </StyledToobar>
-            </AppBar>
-        </>
-    )
-}
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
-export default NavBar
+  return (
+    <>
+      <AppBar position="absolute">
+        <StyledToolbar>
+          {!isMobile && (
+            <>
+              <MenuItem>About</MenuItem>
+              <MenuItem>Skills</MenuItem>
+              <MenuItem>Projects</MenuItem>
+            </>
+          )}
+          {isMobile && (
+            <Box sx={{ marginLeft: 'auto' }}>
+              <Menu right>
+                <a className="menu-item" href="#about">
+                  About
+                </a>
+                <a className="menu-item" href="#skills">
+                  Skills
+                </a>
+                <a className="menu-item" href="#projects">
+                  Projects
+                </a>
+              </Menu>
+            </Box>
+          )}
+        </StyledToolbar>
+      </AppBar>
+    </>
+  );
+};
+
+export default NavBar;
+
