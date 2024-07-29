@@ -1,5 +1,4 @@
-// src/components/NavBar.tsx
-import React from 'react';
+
 import { AppBar, MenuItem, Toolbar, styled, useMediaQuery, useTheme, Box } from '@mui/material';
 import { slide as Menu } from 'react-burger-menu';
 import './HamburguerMenu.css';
