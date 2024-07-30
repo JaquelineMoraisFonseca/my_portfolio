@@ -54,7 +54,7 @@ const Hero = () => {
                         <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2}>Olá, eu sou</Typography>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center">Jaqueline Morais</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3} padding="50px">
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                            <Grid item xs={12} md={6} display="flex" justifyContent="center">
                                 <StyledButton>
                                     <DownloadIcon />
                                     <Typography>
@@ -62,14 +62,31 @@ const Hero = () => {
                                     </Typography>
                                 </StyledButton>
                             </Grid>
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                            <Grid item xs={12} md={6} display="flex" justifyContent="center">
                                 <StyledButton>
                                     <MailOutlineIcon />
                                     <Typography>
                                         Contato
                                     </Typography>
                                 </StyledButton>
+                            </Grid> 
+                            <Grid item xs={12} md={6} display="flex" justifyContent="center" >
+                                <StyledButton>
+                                    <MailOutlineIcon />
+                                    <Typography>
+                                        Likedin
+                                    </Typography>
+                                </StyledButton>
                             </Grid>
+                            <Grid item xs={12} md={6} display="flex" justifyContent="center" >
+                                <StyledButton>
+                                    <MailOutlineIcon />
+                                    <Typography>
+                                        Git Hub
+                                    </Typography>
+                                </StyledButton>
+                            </Grid>
+                            
                         </Grid>
                     </Grid>
                 </Grid>

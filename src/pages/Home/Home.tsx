@@ -7,7 +7,9 @@ const Home = () => {
   return (
     <>
       <NavBar />
+      <Element name="home">
       <Hero />
+      </Element>
       <Element name="sobre-mim">
         <SobreMim  />
       </Element>
