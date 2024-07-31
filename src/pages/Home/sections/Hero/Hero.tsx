@@ -51,7 +51,7 @@ const Hero = () => {
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={7}>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2}>Olá, eu sou</Typography>
+                        <Typography color="primary.contrastText" variant="h2" textAlign="center"  fontSize="20px"  pb={2}>Olá, eu sou</Typography>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center">Jaqueline Morais</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3} padding="50px">
                             <Grid item xs={12} md={6} display="flex" justifyContent="center">

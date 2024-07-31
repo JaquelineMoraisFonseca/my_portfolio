@@ -46,12 +46,7 @@ const NavBar = () => {
               </Link>
             </MenuItem>
             <MenuItem>
-              <Link to="skills" smooth={true} duration={500}>
-                Habilidades
-              </Link>
-            </MenuItem>
-            <MenuItem>
-              <Link to="projects" smooth={true} duration={500}>
+              <Link to="projetos" smooth={true} duration={500}>
                 Projetos
               </Link>
             </MenuItem>
@@ -66,10 +61,7 @@ const NavBar = () => {
               <Link className="menu-item" to="sobre-mim" smooth={true} duration={500} onClick={closeMenu}>
                 Sobre Mim
               </Link>
-              <Link className="menu-item" to="skills" smooth={true} duration={500} onClick={closeMenu}>
-                Habilidades
-              </Link>
-              <Link className="menu-item" to="projects" smooth={true} duration={500} onClick={closeMenu}>
+              <Link className="menu-item" to="projetos" smooth={true} duration={500} onClick={closeMenu}>
                 Projetos
               </Link>
             </Menu>
