@@ -1,6 +1,20 @@
-import { Box, Container, Grid, styled } from "@mui/material";
+import { Box, Container, Grid, styled, Typography } from "@mui/material";
+import Lista from "../../../../assets/images/Listadetarefas.png"
 
+const StyledTypography = styled(Typography)(({theme}) => ({
+    fontSize: '3em',
+    color: "white",
+    [theme.breakpoints.down('sm')]: {
+        fontSize: '2rem',
+    },
+}));
 
+const StyledImgJs = styled("img")(({ theme }) => ({
+    width: "100%",
+    [theme.breakpoints.down('sm')]: {
+        maxWidth: "50px",
+    },
+}));
 
 const Projetos = () => {
     const StyledSobreMim = styled("div")(() => ({
@@ -16,15 +30,23 @@ const Projetos = () => {
     return (
         <StyledSobreMim>
             <Container maxWidth="lg">
-                <Grid container spacing={2}>
-                    <Grid item xs={12} md={8}>
+                <Box>
+                    <StyledTypography>Projetos</StyledTypography>
+                </Box>
+                <Grid container spacing={1} paddingTop="100px"> 
+                    <Grid item xs={12} md={4}>
                         <Box>
-                            
+                        <StyledImgJs src={Lista} />
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <Box position="relative" textAlign="center">
-                            
+                        <Box >
+                            projeto 2
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Box >
+                            projeto 3
                         </Box>
                     </Grid>
                 </Grid>
