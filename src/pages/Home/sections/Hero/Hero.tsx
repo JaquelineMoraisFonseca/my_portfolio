@@ -7,7 +7,7 @@ import { AnimatedBackground } from "../../../../components/AnimatedBackGround";
 
 const Hero = () => {
     const StyledHero = styled("div")(({ theme }) => ({
-        background: "linear-gradient(#212736,#495880)",
+        background: "linear-gradient(#1c1c1c,#4C4C4E)",
         height: "auto",
         minHeight: "100vh",
         display: "flex",
