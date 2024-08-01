@@ -1,5 +1,6 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material";
 import Lista from "../../../../assets/images/Listadetarefas.png"
+import Previsao from "../../../../assets/images/previsao.png"
 
 const StyledTypography = styled(Typography)(({theme}) => ({
     fontSize: '3em',
@@ -41,7 +42,7 @@ const Projetos = () => {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Box >
-                            projeto 2
+                        <StyledImgJs src={Previsao} />
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={4}>

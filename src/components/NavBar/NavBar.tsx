@@ -14,7 +14,7 @@ const NavBar = () => {
 
   const StyledToolbar = styled(Toolbar)(() => ({
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     width: '100%',
   }));
