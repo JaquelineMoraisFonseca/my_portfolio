@@ -7,7 +7,7 @@ import { AnimatedBackground } from "../../../../components/AnimatedBackGround";
 
 const Hero = () => {
     const StyledHero = styled("div")(({ theme }) => ({
-        background: "linear-gradient(#1c1c1c,#4C4C4E)",
+        color:"#e0dede",
         height: "auto",
         minHeight: "100vh",
         display: "flex",
@@ -39,8 +39,9 @@ const Hero = () => {
     return (
         <StyledHero>
             <Container maxWidth="lg">
+            <Box paddingTop="90px" paddingBottom="90px" style={{ borderRadius: "8px", backgroundColor:"#1c1c1c"  }}>
                 <Grid container spacing={2}>
-                    <Grid item xs={12} md={5}>
+                    <Grid item xs={12} md={5} >
                         <Box position="relative">
                             <Box position="absolute" width={"150%"} top={-100} right={0} >
                                 <AnimatedBackground />
@@ -90,6 +91,7 @@ const Hero = () => {
                         </Grid>
                     </Grid>
                 </Grid>
+                </Box>
             </Container>
         </StyledHero>
     );

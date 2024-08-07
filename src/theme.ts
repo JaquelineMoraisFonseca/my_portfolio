@@ -3,14 +3,14 @@ import { createTheme, responsiveFontSizes } from "@mui/material";
 let theme = createTheme({
     palette: {
       primary: {
-        main: '#1c1c1c',
+        main: '#0a0a0a',
       },
       secondary: {
-        main: '#3d4863',
+        main: '#6b6a6a',
       },
     },
     typography:{
-      fontFamily:"BlinkMacSystemFont",
+      fontFamily:"Times New Roman"
       
     }
   });

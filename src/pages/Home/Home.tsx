@@ -7,7 +7,7 @@ import { Element } from 'react-scroll';
 
 const Home = () => {
   return (
-    <>
+    <div style={{backgroundColor:"#0a0a0a" }}>
       <NavBar />
       <Element name="home">
       <Hero />
@@ -18,8 +18,7 @@ const Home = () => {
       <Element name="projetos">
         <Projetos/>
       </Element>
-      {/* Adicione outros componentes com identificadores aqui, se necessário */}
-    </>
+    </div>
   );
 };
 
