@@ -90,10 +90,10 @@ const Projetos = () => {
                                 Este projeto é uma aplicação de lista de tarefas (to-do list) construída com React. A aplicação permite aos usuários gerenciar suas tarefas, oferecendo funcionalidades para adicionar, remover, completar e filtrar itens da lista. A interface é projetada para ser intuitiva e interativa, facilitando a gestão das atividades diárias.
                             </StyledTypographyTexto>
                             <Box paddingTop="20px" display="flex" justifyContent="center">
-                                <Button variant="contained" color="primary" onClick={() => window.open('https://github.com/JaquelineMoraisFonseca/casa_dos_bolos', '_blank')}>
+                                <Button variant="contained" color="primary" onClick={() => window.open('https://github.com/JaquelineMoraisFonseca/todo_list_react', '_blank')}>
                                     &lt;&gt; Code
                                 </Button>
-                                <Button variant="contained" color="primary" onClick={handleBoloClick} style={{ marginLeft: '10px' }}>
+                                <Button variant="contained" color="primary" onClick={handleTodoClick} style={{ marginLeft: '10px' }}>
                                     Projeto
                                 </Button>
                             </Box>
@@ -142,10 +142,10 @@ const Projetos = () => {
                                 Este projeto exibe informações meteorológicas de uma cidade específica, utiliza a biblioteca axios para fazer uma requisição HTTP à API do OpenWeatherMap, buscando dados meteorológicos para uma cidade especificada. A cidade inicial é "São Paulo", mas o usuário pode alterar isso digitando o nome de outra cidade. São exibidos os dados: temperatura °C e descrição da condição climática.
                             </StyledTypographyTexto>
                             <Box paddingTop="20px" display="flex" justifyContent="center">
-                                <Button variant="contained" color="primary" onClick={() => window.open('https://github.com/JaquelineMoraisFonseca/casa_dos_bolos', '_blank')}>
+                                <Button variant="contained" color="primary" onClick={() => window.open('https://github.com/JaquelineMoraisFonseca/previsao_tempo/', '_blank')}>
                                     &lt;&gt; Code
                                 </Button>
-                                <Button variant="contained" color="primary" onClick={handleBoloClick} style={{ marginLeft: '10px' }}>
+                                <Button variant="contained" color="primary" onClick={handleTempoClick} style={{ marginLeft: '10px' }}>
                                     Projeto
                                 </Button>
                             </Box>
