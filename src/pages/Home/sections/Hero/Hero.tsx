@@ -61,7 +61,7 @@ const Hero = () => {
                             <Grid item xs={12} md={6} display="flex" justifyContent="center">
                                 <StyledButton onClick={() => window.open("/my_portfolio/curriculo.pdf", "_blank")}>
                                     <DownloadIcon />
-                                    <Typography >
+                                    <Typography padding="7px">
                                         Currículo
                                     </Typography>
                                 </StyledButton>
@@ -82,7 +82,7 @@ const Hero = () => {
                             <Grid item xs={12} md={6} display="flex" justifyContent="center" >
                                 <StyledButton onClick={() => window.open("https://www.linkedin.com/in/jaqueline-morais-da-fonseca-a8639a307", "_blank")}>
                                     <LinkedInIcon/>
-                                    <Typography>
+                                    <Typography padding="7px">
                                         LinkedIn
                                     </Typography>
                                 </StyledButton>
