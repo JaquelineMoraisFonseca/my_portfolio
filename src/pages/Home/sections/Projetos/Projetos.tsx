@@ -1,6 +1,6 @@
 import { Box, Button, Container, Grid} from "@mui/material";
 
-import Todo from "../../../../assets/images/todo.png";
+import Todo from "../../../../assets/images/tarefas.png";
 import Tempo from "../../../../assets/images/tempo.png";
 import JavaScript from "../../../../assets/images/javalogo.png";
 import CSS from "../../../../assets/images/csslogo.png";
@@ -72,7 +72,7 @@ const Projetos = () => {
                             </SkillsContainer>
                         </Grid>
                         <Grid item xs={12} md={5}>
-                            <Box paddingBottom="30px">
+                            
                                 <StyledBox>
                                     <StyledBoxbolo >
                                         <Overlay className="overlay">
@@ -80,7 +80,7 @@ const Projetos = () => {
                                         </Overlay>
                                     </StyledBoxbolo>
                                 </StyledBox>
-                            </Box>
+                            
                         </Grid>
                     </Grid>
                     <Grid container spacing={2} paddingTop="100px" justifyContent="center" alignItems="center">
@@ -125,14 +125,14 @@ const Projetos = () => {
                             </SkillsContainer>
                         </Grid>
                         <Grid item xs={12} md={5}>
-                            <Box paddingBottom="30px">
+                            
                                 <StyledBox >
                                     <StyledImg src={Todo} />
                                     <Overlay className="overlay">
                                         Projeto To-Do List
                                     </Overlay>
                                 </StyledBox>
-                            </Box>
+                            
                         </Grid>
                     </Grid>
                     <Grid container spacing={2} paddingTop="100px" justifyContent="center">

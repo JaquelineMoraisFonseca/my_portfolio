@@ -58,8 +58,6 @@ export const StyledBox = styled("div")(({ theme }) => ({
     position: "relative",
     borderRadius: "8px",
     cursor: "pointer",
-    paddingBottom: "16px",
-   
     '&:hover': {
         '& .overlay': {
             opacity: 1,
@@ -67,19 +65,20 @@ export const StyledBox = styled("div")(({ theme }) => ({
     },
     [theme.breakpoints.down('md')]: {
         margin: 'auto',
-        paddingBottom: '40px', 
+        
     },
     [theme.breakpoints.down('sm')]: {
         width: "100%", 
         maxWidth: "300px",
         maxHeight: "300px",
-        paddingBottom: '32px', 
+       
     },
 }));
 
 export const StyledImg = styled("img")(() => ({
     width: "100%",
     height: "100%",
+    
 }));
 
 export const Overlay = styled("div")(() => ({
