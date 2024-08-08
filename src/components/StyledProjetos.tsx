@@ -140,5 +140,5 @@ export const StyledTypographyTexto = styled("div")(() => ({
     fontSize: "1.2rem",
     paddingTop: "30px",
     textAlign: "left",
-    paddingLeft: "50px"
+    paddingLeft: "30px"
 }));

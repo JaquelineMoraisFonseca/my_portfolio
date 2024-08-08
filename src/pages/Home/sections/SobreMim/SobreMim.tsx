@@ -40,7 +40,8 @@ const StyledHabilidades = styled(Typography)(({ theme }) => ({
     marginTop: '20px',
     paddingBottom: "50px",
     [theme.breakpoints.down('sm')]: {
-        textAlign: 'center',
+        display:"flex",
+        justifyContent:"center",
     },
 }));
 
@@ -95,7 +96,7 @@ const SobreMim = () => {
                                 </Box>
                                 <Box paddingTop="45px" fontSize="2.0rem">
                                     <StyledHabilidades>Habilidades</StyledHabilidades>
-                                        <Grid container spacing={2} justifyContent="center" paddingLeft="50px">
+                                        <Grid container spacing={2} justifyContent="center" >
                                         <Grid item xs={4} sm={4} md={2}>
                                             <SkillItem>
                                                 <SkillImg src={JavaScript} alt="JavaScript"/>
