@@ -93,7 +93,7 @@ const Projetos = () => {
                                 <Button variant="contained" color="primary" onClick={() => window.open('https://github.com/JaquelineMoraisFonseca/todo_list_react', '_blank')}>
                                     &lt;&gt; Code
                                 </Button>
-                                <Button variant="contained" color="primary"  style={{ marginLeft: '10px' }}>
+                                <Button variant="contained" color="primary" onClick={handleTodoClick} style={{ marginLeft: '10px' }}>
                                     Projeto
                                 </Button>
                             </Box>
@@ -178,7 +178,7 @@ const Projetos = () => {
                         </Grid>
                         <Grid item xs={12} md={5}>
                             <Box paddingBottom="30px">
-                                <StyledBox onClick={handleTempoClick}>
+                                <StyledBox>
                                     <StyledImg src={Tempo} />
                                     <Overlay className="overlay">
                                         Projeto Previsão do Tempo

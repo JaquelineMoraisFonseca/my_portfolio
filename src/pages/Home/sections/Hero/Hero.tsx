@@ -1,9 +1,12 @@
-import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { Box, Container, Grid, MenuItem, Typography, styled } from "@mui/material";
 import Avatar from "../../../../assets/images/avatar.png";
 import DownloadIcon from '@mui/icons-material/Download';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import { AnimatedBackground } from "../../../../components/AnimatedBackGround";
+import { Link } from 'react-scroll';
 
 const Hero = () => {
     const StyledHero = styled("div")(({ theme }) => ({
@@ -59,6 +62,7 @@ const Hero = () => {
                                 <StyledButton>
                                     <DownloadIcon />
                                     <Typography>
+                                        
                                         Download CV
                                     </Typography>
                                 </StyledButton>
@@ -67,13 +71,18 @@ const Hero = () => {
                                 <StyledButton>
                                     <MailOutlineIcon />
                                     <Typography>
-                                        Contato
+                                        <MenuItem>
+                                        <Link to="Footer" smooth={true} duration={500}>
+                                            Contato
+                                        </Link>
+                                        </MenuItem>
+                                
                                     </Typography>
                                 </StyledButton>
                             </Grid> 
                             <Grid item xs={12} md={6} display="flex" justifyContent="center" >
                                 <StyledButton onClick={() => window.open("https://www.linkedin.com/in/jaqueline-morais-da-fonseca-a8639a307", "_blank")}>
-                                    <MailOutlineIcon />
+                                    <LinkedInIcon/>
                                     <Typography>
                                         LinkedIn
                                     </Typography>
@@ -81,7 +90,7 @@ const Hero = () => {
                             </Grid>
                             <Grid item xs={12} md={6} display="flex" justifyContent="center" >
                                 <StyledButton onClick={() => window.open("https://github.com/JaquelineMoraisFonseca", "_blank")}>
-                                    <MailOutlineIcon />
+                                    <GitHubIcon/>
                                     <Typography>
                                         GitHub
                                     </Typography>
