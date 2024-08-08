@@ -59,11 +59,10 @@ const Hero = () => {
                         <Typography color="primary.contrastText" variant="h1" textAlign="center">Jaqueline Morais</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3} padding="50px">
                             <Grid item xs={12} md={6} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={() => window.open("/my_portfolio/curriculo.pdf", "_blank")}>
                                     <DownloadIcon />
                                     <Typography>
-                                        
-                                        Download CV
+                                        Currículo
                                     </Typography>
                                 </StyledButton>
                             </Grid>
