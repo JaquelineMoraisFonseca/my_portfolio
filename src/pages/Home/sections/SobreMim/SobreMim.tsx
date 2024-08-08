@@ -19,7 +19,7 @@ const StyledSobreMim = styled("div")(() => ({
     display: "flex",
     alignItems: "center",
     paddingTop: "100px",
-    color: "white",
+    color: "#e0dede",
 }));
 
 const StyledImg = styled("img")(({ theme }) => ({
@@ -92,10 +92,10 @@ const SobreMim = () => {
                         <Grid item xs={12} md={7}>
                             <Box>
                                 <Typography variant="h2" textAlign="center" paddingBottom="50px">Sobre mim</Typography>
-                                <Typography textAlign="left" paddingLeft="50px">
+                                <Typography textAlign="left" paddingLeft="50px" fontSize="1.2rem">
                                     Meu nome é Jaqueline Morais e sou apaixonada por tecnologia. Meu primeiro contato com programação foi em 2019, quando ainda estava no ensino médio. Iniciei minha faculdade de Análise e Desenvolvimento de Sistemas em 2023.
                                 </Typography>
-                                <Typography textAlign="left" marginTop={2} paddingLeft="50px">
+                                <Typography textAlign="left" marginTop={2} paddingLeft="50px" fontSize="1.2rem">
                                     Hoje já entendo tecnologias voltadas para o Front-end e me dedico cada dia para me tornar uma profissional de sucesso na área.
                                 </Typography>
                                 <Box 

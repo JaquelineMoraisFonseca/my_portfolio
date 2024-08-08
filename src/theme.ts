@@ -10,7 +10,7 @@ let theme = createTheme({
       },
     },
     typography:{
-      fontFamily:"Times New Roman"
+      fontFamily:"Cocogose"
       
     },
   });
