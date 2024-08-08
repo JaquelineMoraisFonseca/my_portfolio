@@ -2,7 +2,7 @@ import { styled, Typography } from "@mui/material";
 import Bolo from "../assets/images/projetobolo.png";
 
 
-export const StyledProjetos = styled("div")(() => ({
+export const StyledProjetos = styled("div")(({theme}) => ({
     color: "#e0dede",
     position: "relative",
     zIndex: 10,
@@ -13,6 +13,11 @@ export const StyledProjetos = styled("div")(() => ({
     justifyContent: "center",
     alignItems: "center",
     overflowY: "auto",
+    [theme.breakpoints.down('md')]: {
+       display:"flex",
+       textAligth:"center",
+       paddingLeft: "0px"
+    },
 }));
 
 
@@ -45,28 +50,30 @@ export const StyledTypography = styled(Typography)(({ theme }) => ({
 
 export const StyledBox = styled("div")(({ theme }) => ({
     boxShadow: "0 0 40px 10px #121212",
-    width: "360px",
-    height: "400px",
+    width: "100%", 
+    maxWidth: "360px", 
+    height: "auto", 
+    maxHeight: "400px", 
     overflow: "hidden",
     position: "relative",
     borderRadius: "8px",
     cursor: "pointer",
+    paddingBottom: "16px",
+   
     '&:hover': {
         '& .overlay': {
             opacity: 1,
         },
     },
     [theme.breakpoints.down('md')]: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
         margin: 'auto',
-        
+        paddingBottom: '40px', 
     },
-    [theme.breakpoints.down('xs')]: {
-        margin: 'auto',
-        width: '200px',
-        height: '200px',
+    [theme.breakpoints.down('sm')]: {
+        width: "100%", 
+        maxWidth: "300px",
+        maxHeight: "300px",
+        paddingBottom: '32px', 
     },
 }));
 
@@ -100,6 +107,7 @@ export const SkillsContainer = styled("div")(({ theme }) => ({
     [theme.breakpoints.down('md')]: {
         gap: "20px",
         paddingTop: "40px",
+    
     },
 }));
 

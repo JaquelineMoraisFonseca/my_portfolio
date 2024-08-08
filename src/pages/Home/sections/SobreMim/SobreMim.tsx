@@ -8,12 +8,6 @@ import Git from "../../../../assets/images/gitlogo .png";
 import GitHub from "../../../../assets/images/github.png";
 
 
-const StyledTypography = styled(Typography)(({ theme }) => ({
-    fontSize: '1.2rem',
-    [theme.breakpoints.down('sm')]: {
-        fontSize: '0.8rem',
-    },
-}));
 
 const StyledSobreMim = styled("div")(() => ({
     position: "relative",
@@ -32,6 +26,7 @@ const StyledImg = styled("img")(({ theme }) => ({
     width: "75%",
     borderRadius: "50%",
     border: `1px solid ${theme.palette.primary.contrastText}`,
+    
     [theme.breakpoints.up('sm')]: {
         width: "50%",
     },
@@ -40,10 +35,13 @@ const StyledImg = styled("img")(({ theme }) => ({
     },
 }));
 
-const StyledHabilidades = styled(StyledTypography)(() => ({
+const StyledHabilidades = styled(Typography)(({ theme }) => ({
     fontSize: '2rem',
     marginTop: '20px',
     paddingBottom: "50px",
+    [theme.breakpoints.down('sm')]: {
+        textAlign: 'center',
+    },
 }));
 
 const SkillItem = styled("div")(() => ({
@@ -76,22 +74,25 @@ const SobreMim = () => {
     return (
         <StyledSobreMim>
             <Container maxWidth="lg">
-                <Box paddingTop="50px" paddingBottom="50px" style={{ borderRadius: "8px", backgroundColor: "#1c1c1c" }}>
+                <Box paddingTop={isMobile ? "50px" : "0px"} paddingBottom="50px" style={{ borderRadius: "8px", backgroundColor: "#1c1c1c" }}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={7}>
                             <Box>
                                 <Typography variant="h2" textAlign="center" paddingBottom="50px">Sobre mim</Typography>
-                                <StyledTypography textAlign="left" paddingLeft="50px">
+                                <Typography textAlign="left" paddingLeft="50px">
                                     Meu nome é Jaqueline Morais e sou apaixonada por tecnologia. Meu primeiro contato com programação foi em 2019, quando ainda estava no ensino médio. Iniciei minha faculdade de Análise e Desenvolvimento de Sistemas em 2023.
-                                </StyledTypography>
-                                <StyledTypography textAlign="left" marginTop={2} paddingLeft="50px">
+                                </Typography>
+                                <Typography textAlign="left" marginTop={2} paddingLeft="50px">
                                     Hoje já entendo tecnologias voltadas para o Front-end e me dedico cada dia para me tornar uma profissional de sucesso na área.
-                                </StyledTypography>
-                                {isMobile && (
-                                    <Box position="relative" textAlign="center" mb={4}>
-                                        <StyledImg src={Jornada} />
-                                    </Box>
-                                )}
+                                </Typography>
+                                <Box 
+                                    position="relative" 
+                                    textAlign="center" 
+                                    mb={4}
+                                    paddingTop={isMobile ? "50px" : "0px"}
+                                >
+                                    {isMobile && <StyledImg src={Jornada} />}
+                                </Box>
                                 <Box paddingTop="45px" fontSize="2.0rem">
                                     <StyledHabilidades>Habilidades</StyledHabilidades>
                                         <Grid container spacing={2} justifyContent="center" paddingLeft="50px">
@@ -137,7 +138,7 @@ const SobreMim = () => {
                         </Grid>
                         {!isMobile && (
                             <Grid item xs={12} md={5}>
-                                <Box position="relative" textAlign="center">
+                                <Box position="relative" textAlign="center" paddingTop="50px">
                                     <StyledImg src={Jornada} />
                                 </Box>
                             </Grid>
