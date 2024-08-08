@@ -1,6 +1,6 @@
-import { Box, Button, Container, Grid} from "@mui/material";
+import { Box, Button, Container, Grid, styled} from "@mui/material";
 
-import Todo from "../../../../assets/images/tarefas.png";
+import Todo from "../../../../assets/images/todo.png";
 import Tempo from "../../../../assets/images/tempo.png";
 import JavaScript from "../../../../assets/images/javalogo.png";
 import CSS from "../../../../assets/images/csslogo.png";
@@ -9,6 +9,20 @@ import HTML from "../../../../assets/images/htmllogo.png";
 import Git from "../../../../assets/images/gitlogo .png";
 import GitHub from "../../../../assets/images/github.png";
 import {StyledBoxbolo, StyledTypography, StyledBox, StyledImg, Overlay, SkillsContainer,SkillItem, SkillImg, SkillName, StyledProjetos, StyledTypographyTitulo, StyledTypographyTexto } from '../../../../components/StyledProjetos';
+
+const HighlightedText = styled('span')(() => ({
+    color: '#a1575e', 
+  }));
+
+  const HighlightedTextTodo = styled('span')(() => ({
+    color: '#ddeb44', 
+  }));
+
+  const HighlightedTextTempo = styled('span')(() => ({
+    color: '#19708c', 
+  }));
+  
+  
 
 const Projetos = () => {
     
@@ -31,7 +45,7 @@ const Projetos = () => {
                     <Box><StyledTypography>Meus projetos</StyledTypography></Box>
                     <Grid container spacing={2} paddingTop="100px" justifyContent="center">
                         <Grid item xs={12} md={7}>
-                            <StyledTypographyTitulo>Projeto Casa dos Bolos</StyledTypographyTitulo>
+                            <StyledTypographyTitulo>Projeto  <HighlightedText>Casa dos Bolos</HighlightedText></StyledTypographyTitulo>
                             <StyledTypographyTexto>
                                 Este projeto é uma aplicação web para uma confeitaria chamada "Casa dos Bolos", desenvolvida usando Material-UI (MUI) e Redux para o Gerenciamento de estado para adicionar itens ao carrinho de compras
                             </StyledTypographyTexto>
@@ -50,24 +64,24 @@ const Projetos = () => {
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={CSS} alt="CSS" />
-                                    <SkillName className="skill-name">CSS</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={ReactImg} alt="React" />
-                                    <SkillName className="skill-name">React</SkillName>
+                                    
                                 </SkillItem>
                                 
                                 <SkillItem>
                                     <SkillImg src={HTML} alt="HTML" />
-                                    <SkillName className="skill-name">HTML</SkillName>
+                                  
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={Git} alt="Git" />
-                                    <SkillName className="skill-name">Git</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={GitHub} alt="GitHub" />
-                                    <SkillName className="skill-name">GitHub</SkillName>
+                                    
                                 </SkillItem>
                             </SkillsContainer>
                         </Grid>
@@ -83,9 +97,9 @@ const Projetos = () => {
                             
                         </Grid>
                     </Grid>
-                    <Grid container spacing={2} paddingTop="100px" justifyContent="center" alignItems="center">
+                    <Grid container spacing={2} paddingTop="100px" justifyContent="center">
                         <Grid item xs={12} md={7}>
-                            <StyledTypographyTitulo>Projeto To do List</StyledTypographyTitulo>
+                            <StyledTypographyTitulo>Projeto <HighlightedTextTodo>Projeto Todo List</HighlightedTextTodo> </StyledTypographyTitulo>
                             <StyledTypographyTexto>
                                 Este projeto é uma aplicação de lista de tarefas (to-do list) construída com React. A aplicação permite aos usuários gerenciar suas tarefas, oferecendo funcionalidades para adicionar, remover, completar e filtrar itens da lista. A interface é projetada para ser intuitiva e interativa, facilitando a gestão das atividades diárias.
                             </StyledTypographyTexto>
@@ -100,7 +114,7 @@ const Projetos = () => {
                             <SkillsContainer>
                                 <SkillItem>
                                     <SkillImg src={JavaScript} alt="JavaScript" />
-                                    <SkillName className="skill-name">JavaScript</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={CSS} alt="CSS" />
@@ -108,36 +122,36 @@ const Projetos = () => {
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={ReactImg} alt="React" />
-                                    <SkillName className="skill-name">React</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={HTML} alt="HTML" />
-                                    <SkillName className="skill-name">HTML</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={Git} alt="Git" />
-                                    <SkillName className="skill-name">Git</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={GitHub} alt="GitHub" />
-                                    <SkillName className="skill-name">GitHub</SkillName>
+                                    
                                 </SkillItem>
                             </SkillsContainer>
                         </Grid>
                         <Grid item xs={12} md={5}>
-                            
-                                <StyledBox >
+                            <Box >
+                                <StyledBox>
                                     <StyledImg src={Todo} />
                                     <Overlay className="overlay">
-                                        Projeto To-Do List
+                                        Projeto Todo List
                                     </Overlay>
                                 </StyledBox>
-                            
+                            </Box>
                         </Grid>
                     </Grid>
                     <Grid container spacing={2} paddingTop="100px" justifyContent="center">
                         <Grid item xs={12} md={7}>
-                            <StyledTypographyTitulo>Projeto Previsão do tempo</StyledTypographyTitulo>
+                            <StyledTypographyTitulo>Projeto <HighlightedTextTempo>Previsão do tempo</HighlightedTextTempo> </StyledTypographyTitulo>
                             <StyledTypographyTexto>
                                 Este projeto exibe informações meteorológicas de uma cidade específica, utiliza a biblioteca axios para fazer uma requisição HTTP à API do OpenWeatherMap, buscando dados meteorológicos para uma cidade especificada. A cidade inicial é "São Paulo", mas o usuário pode alterar isso digitando o nome de outra cidade. São exibidos os dados: temperatura °C e descrição da condição climática.
                             </StyledTypographyTexto>
@@ -152,19 +166,19 @@ const Projetos = () => {
                             <SkillsContainer>
                                 <SkillItem>
                                     <SkillImg src={JavaScript} alt="JavaScript" />
-                                    <SkillName className="skill-name">JavaScript</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={CSS} alt="CSS" />
-                                    <SkillName className="skill-name">CSS</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={ReactImg} alt="React" />
-                                    <SkillName className="skill-name">React</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={HTML} alt="HTML" />
-                                    <SkillName className="skill-name">HTML</SkillName>
+                                    
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={Git} alt="Git" />
@@ -172,7 +186,7 @@ const Projetos = () => {
                                 </SkillItem>
                                 <SkillItem>
                                     <SkillImg src={GitHub} alt="GitHub" />
-                                    <SkillName className="skill-name">GitHub</SkillName>
+                                   
                                 </SkillItem>
                             </SkillsContainer>
                         </Grid>

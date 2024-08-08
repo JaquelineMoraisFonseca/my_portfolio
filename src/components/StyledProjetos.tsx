@@ -50,10 +50,10 @@ export const StyledTypography = styled(Typography)(({ theme }) => ({
 
 export const StyledBox = styled("div")(({ theme }) => ({
     boxShadow: "0 0 40px 10px #121212",
-    width: "100%", 
-    maxWidth: "360px", 
-    height: "auto", 
-    maxHeight: "400px", 
+    width: "100%",
+    maxWidth: "360px",
+    height: "auto",
+    maxHeight: "400px",
     overflow: "hidden",
     position: "relative",
     borderRadius: "8px",
@@ -65,20 +65,20 @@ export const StyledBox = styled("div")(({ theme }) => ({
     },
     [theme.breakpoints.down('md')]: {
         margin: 'auto',
-        
     },
     [theme.breakpoints.down('sm')]: {
-        width: "100%", 
+        width: "100%",
         maxWidth: "300px",
         maxHeight: "300px",
-       
     },
 }));
 
+
 export const StyledImg = styled("img")(() => ({
     width: "100%",
-    height: "100%",
-    
+    height: "auto",
+    display: "block",
+    transition: "transform 0.3s ease",
 }));
 
 export const Overlay = styled("div")(() => ({
@@ -112,17 +112,13 @@ export const SkillsContainer = styled("div")(({ theme }) => ({
 
 export const SkillItem = styled("div")(() => ({
     textAlign: "center",
-    '&:hover .skill-name': {
-        display: "block",
-    }
+    
 }));
 
 export const SkillImg = styled("img")(() => ({
     width: "40px",
     height: "40px",
-    '&:hover': {
-        transform: "scale(1.1)",
-    },
+    
 }));
 
 export const SkillName = styled("div")(() => ({

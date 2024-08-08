@@ -61,7 +61,7 @@ const Hero = () => {
                             <Grid item xs={12} md={6} display="flex" justifyContent="center">
                                 <StyledButton onClick={() => window.open("/my_portfolio/curriculo.pdf", "_blank")}>
                                     <DownloadIcon />
-                                    <Typography padding="7px">
+                                    <Typography  padding="7px">
                                         Currículo
                                     </Typography>
                                 </StyledButton>

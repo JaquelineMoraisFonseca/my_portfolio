@@ -47,25 +47,37 @@ const StyledHabilidades = styled(Typography)(({ theme }) => ({
 
 const SkillItem = styled("div")(() => ({
     textAlign: "center",
-    paddingBottom:"50px",
-    '&:hover .skill-name': {
-        display: "block",
-    }
+    paddingBottom: "50px",
+    position: "relative", 
 }));
-
 const SkillImg = styled("img")(() => ({
     width: "40px",
     height: "40px",
+    transition: "transform 0.3s ease",  
     '&:hover': {
         transform: "scale(1.1)",
     },
 }));
-
 const SkillName = styled("div")(() => ({
-    display: "none",
+    opacity: 0,
+    visibility: "hidden",
     color: "white",
-    marginTop: "5px",
-    fontSize: "0.8rem", 
+    fontSize: "0.8rem",
+    position: "absolute",
+    top: "55px",
+    left: "50%",
+    transform: "translateX(-50%)", 
+    whiteSpace: "nowrap",  
+    transition: "opacity 0.3s ease, visibility 0.3s ease", 
+    paddingTop: "-4px",
+    
+}));
+
+const SkillItemHover = styled(SkillItem)(() => ({
+    '&:hover .skill-name': {
+        opacity: 1,
+        visibility: "visible",
+    }
 }));
 
 const SobreMim = () => {
@@ -98,40 +110,40 @@ const SobreMim = () => {
                                     <StyledHabilidades>Habilidades</StyledHabilidades>
                                         <Grid container spacing={2} justifyContent="center" >
                                         <Grid item xs={4} sm={4} md={2}>
-                                            <SkillItem>
+                                            <SkillItemHover>
                                                 <SkillImg src={JavaScript} alt="JavaScript"/>
                                                 <SkillName className="skill-name">JavaScript</SkillName>
-                                            </SkillItem>
+                                            </SkillItemHover>
                                         </Grid>
                                         <Grid item xs={4} sm={4} md={2}>
-                                            <SkillItem>
+                                            <SkillItemHover>
                                                 <SkillImg src={CSS} alt="CSS" />
                                                 <SkillName className="skill-name">CSS</SkillName>
-                                            </SkillItem>
+                                            </SkillItemHover>
                                         </Grid>
                                         <Grid item xs={4} sm={4} md={2}>
-                                            <SkillItem>
+                                            <SkillItemHover>
                                                 <SkillImg src={HTML} alt="HTML" />
                                                 <SkillName className="skill-name">HTML</SkillName>
-                                            </SkillItem>
+                                            </SkillItemHover>
                                         </Grid>
                                         <Grid item xs={4} sm={4} md={2}>
-                                            <SkillItem>
+                                            <SkillItemHover>
                                                 <SkillImg src={ReactImg} alt="React" />
                                                 <SkillName className="skill-name">React</SkillName>
-                                            </SkillItem>
+                                            </SkillItemHover>
                                         </Grid>
                                         <Grid item xs={4} sm={4} md={2}>
-                                            <SkillItem>
+                                            <SkillItemHover>
                                                 <SkillImg src={Git} alt="Git" />
                                                 <SkillName className="skill-name">Git</SkillName>
-                                            </SkillItem>
+                                            </SkillItemHover>
                                         </Grid>
                                         <Grid item xs={4} sm={4} md={2}>
-                                            <SkillItem>
+                                            <SkillItemHover>
                                                 <SkillImg src={GitHub} alt="GitHub" />
                                                 <SkillName className="skill-name">GitHub</SkillName>
-                                            </SkillItem>
+                                            </SkillItemHover>
                                         </Grid>
                                     </Grid>
                                 </Box>
