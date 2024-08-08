@@ -72,18 +72,18 @@ const Hero = () => {
                                 </StyledButton>
                             </Grid> 
                             <Grid item xs={12} md={6} display="flex" justifyContent="center" >
-                                <StyledButton>
+                                <StyledButton onClick={() => window.open("https://www.linkedin.com/in/jaqueline-morais-da-fonseca-a8639a307", "_blank")}>
                                     <MailOutlineIcon />
                                     <Typography>
-                                        Likedin
+                                        LinkedIn
                                     </Typography>
                                 </StyledButton>
                             </Grid>
                             <Grid item xs={12} md={6} display="flex" justifyContent="center" >
-                                <StyledButton>
+                                <StyledButton onClick={() => window.open("https://github.com/JaquelineMoraisFonseca", "_blank")}>
                                     <MailOutlineIcon />
                                     <Typography>
-                                        Git Hub
+                                        GitHub
                                     </Typography>
                                 </StyledButton>
                             </Grid>

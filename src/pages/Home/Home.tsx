@@ -1,4 +1,5 @@
 import NavBar from "../../components/NavBar/NavBar";
+import Footer from "./sections/Footer/Footer";
 
 import Hero from "./sections/Hero/Hero";
 import Projetos from "./sections/Projetos/Projetos";
@@ -17,6 +18,9 @@ const Home = () => {
       </Element>
       <Element name="projetos">
         <Projetos/>
+      </Element>
+      <Element name="Footer">
+        <Footer/>
       </Element>
     </div>
   );

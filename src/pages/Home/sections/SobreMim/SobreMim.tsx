@@ -3,9 +3,10 @@ import Jornada from "../../../../assets/images/jornada.png";
 import JavaScript from "../../../../assets/images/javalogo.png";
 import CSS from "../../../../assets/images/csslogo.png";
 import ReactImg from "../../../../assets/images/reactlogo.png";
-import HTML from "../../../../assets/images/htmllogo.png"; // Corrigi a URL do HTML logo
-import Git from "../../../../assets/images/gitlogo.png";
-import GitHub from "../../../../assets/images/github (1).png";
+import HTML from "../../../../assets/images/htmllogo.png";
+import Git from "../../../../assets/images/gitlogo .png";
+import GitHub from "../../../../assets/images/github.png";
+
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
     fontSize: '1.2rem',
@@ -17,13 +18,13 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
 const StyledSobreMim = styled("div")(() => ({
     position: "relative",
     zIndex: 10,
-    padding: "80px 0", // Ajuste o padding para mover para cima
+    padding: "80px 0",
     textAlign: "center",
-    height: "auto",  
+    height: "auto",
     minHeight: "100vh",
     display: "flex",
     alignItems: "center",
-    paddingTop: "100px", // Ajuste o padding top para mover para cima
+    paddingTop: "100px",
     color: "white",
 }));
 
@@ -38,8 +39,6 @@ const StyledImg = styled("img")(({ theme }) => ({
         width: "75%",
     },
 }));
-
-
 
 const StyledHabilidades = styled(StyledTypography)(() => ({
     fontSize: '2rem',
@@ -67,7 +66,7 @@ const SkillName = styled("div")(() => ({
     display: "none",
     color: "white",
     marginTop: "5px",
-    fontSize: "0.8rem", // Diminua o tamanho da fonte das descrições
+    fontSize: "0.8rem", 
 }));
 
 const SobreMim = () => {
@@ -95,38 +94,38 @@ const SobreMim = () => {
                                 )}
                                 <Box paddingTop="45px" fontSize="2.0rem">
                                     <StyledHabilidades>Habilidades</StyledHabilidades>
-                                    <Grid container spacing={2} justifyContent="center" paddingLeft="50px">
-                                        <Grid item xs={6} sm={4} md={2}>
+                                        <Grid container spacing={2} justifyContent="center" paddingLeft="50px">
+                                        <Grid item xs={4} sm={4} md={2}>
                                             <SkillItem>
-                                                <SkillImg src={JavaScript} alt="JavaScript" />
+                                                <SkillImg src={JavaScript} alt="JavaScript"/>
                                                 <SkillName className="skill-name">JavaScript</SkillName>
                                             </SkillItem>
                                         </Grid>
-                                        <Grid item xs={6} sm={4} md={2}>
+                                        <Grid item xs={4} sm={4} md={2}>
                                             <SkillItem>
                                                 <SkillImg src={CSS} alt="CSS" />
                                                 <SkillName className="skill-name">CSS</SkillName>
                                             </SkillItem>
                                         </Grid>
-                                        <Grid item xs={6} sm={4} md={2}>
+                                        <Grid item xs={4} sm={4} md={2}>
                                             <SkillItem>
                                                 <SkillImg src={HTML} alt="HTML" />
                                                 <SkillName className="skill-name">HTML</SkillName>
                                             </SkillItem>
                                         </Grid>
-                                        <Grid item xs={6} sm={4} md={2}>
+                                        <Grid item xs={4} sm={4} md={2}>
                                             <SkillItem>
                                                 <SkillImg src={ReactImg} alt="React" />
                                                 <SkillName className="skill-name">React</SkillName>
                                             </SkillItem>
                                         </Grid>
-                                        <Grid item xs={6} sm={4} md={2}>
+                                        <Grid item xs={4} sm={4} md={2}>
                                             <SkillItem>
                                                 <SkillImg src={Git} alt="Git" />
                                                 <SkillName className="skill-name">Git</SkillName>
                                             </SkillItem>
                                         </Grid>
-                                        <Grid item xs={6} sm={4} md={2}>
+                                        <Grid item xs={4} sm={4} md={2}>
                                             <SkillItem>
                                                 <SkillImg src={GitHub} alt="GitHub" />
                                                 <SkillName className="skill-name">GitHub</SkillName>
