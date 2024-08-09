@@ -1,5 +1,5 @@
 import { Box, Container, Grid, MenuItem, Typography, styled } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.png";
+import Avatar from "../../../../assets/images/avatarum.png";
 import DownloadIcon from '@mui/icons-material/Download';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
