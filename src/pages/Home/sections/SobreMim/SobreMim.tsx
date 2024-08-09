@@ -50,12 +50,16 @@ const SkillItem = styled("div")(() => ({
     paddingBottom: "50px",
     position: "relative", 
 }));
-const SkillImg = styled("img")(() => ({
+const SkillImg = styled("img")(({theme}) => ({
     width: "40px",
     height: "40px",
     transition: "transform 0.3s ease",  
     '&:hover': {
         transform: "scale(1.1)",
+    },
+    [theme.breakpoints.down('xs')]: {
+        width: "10px",
+        height: "10px",
     },
 }));
 const SkillName = styled("div")(() => ({
@@ -80,6 +84,16 @@ const SkillItemHover = styled(SkillItem)(() => ({
     }
 }));
 
+const StyledTypograpy = styled(Typography)(({theme}) => ({
+    textAlign: "center",
+    paddingLeft:"50px",
+    fontSize:"1.2rem",
+    [theme.breakpoints.down('md')]: {
+        paddingLeft:"20px",
+        textAlign: "left",
+    },
+}));
+
 const SobreMim = () => {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -92,12 +106,13 @@ const SobreMim = () => {
                         <Grid item xs={12} md={7}>
                             <Box>
                                 <Typography variant="h2" textAlign="center" paddingBottom="50px">Sobre mim</Typography>
-                                <Typography textAlign="left" paddingLeft="50px" fontSize="1.2rem">
+                                <StyledTypograpy>
                                     Meu nome é Jaqueline Morais e sou apaixonada por tecnologia. Meu primeiro contato com programação foi em 2019, quando ainda estava no ensino médio. Iniciei minha faculdade de Análise e Desenvolvimento de Sistemas em 2023.
-                                </Typography>
-                                <Typography textAlign="left" marginTop={2} paddingLeft="50px" fontSize="1.2rem">
+                                </StyledTypograpy>
+                                <StyledTypograpy marginTop={2}>
                                     Hoje já entendo tecnologias voltadas para o Front-end e me dedico cada dia para me tornar uma profissional de sucesso na área.
-                                </Typography>
+                                </StyledTypograpy>
+                                
                                 <Box 
                                     position="relative" 
                                     textAlign="center" 
@@ -109,37 +124,37 @@ const SobreMim = () => {
                                 <Box paddingTop="45px" fontSize="2.0rem">
                                     <StyledHabilidades>Habilidades</StyledHabilidades>
                                         <Grid container spacing={2} justifyContent="center" >
-                                        <Grid item xs={4} sm={4} md={2}>
+                                        <Grid item xs={3} sm={4} md={2}>
                                             <SkillItemHover>
                                                 <SkillImg src={JavaScript} alt="JavaScript"/>
                                                 <SkillName className="skill-name">JavaScript</SkillName>
                                             </SkillItemHover>
                                         </Grid>
-                                        <Grid item xs={4} sm={4} md={2}>
+                                        <Grid item xs={3} sm={3} md={2}>
                                             <SkillItemHover>
                                                 <SkillImg src={CSS} alt="CSS" />
                                                 <SkillName className="skill-name">CSS</SkillName>
                                             </SkillItemHover>
                                         </Grid>
-                                        <Grid item xs={4} sm={4} md={2}>
+                                        <Grid item xs={3} sm={3} md={2}>
                                             <SkillItemHover>
                                                 <SkillImg src={HTML} alt="HTML" />
                                                 <SkillName className="skill-name">HTML</SkillName>
                                             </SkillItemHover>
                                         </Grid>
-                                        <Grid item xs={4} sm={4} md={2}>
+                                        <Grid item xs={3} sm={3} md={2}>
                                             <SkillItemHover>
                                                 <SkillImg src={ReactImg} alt="React" />
                                                 <SkillName className="skill-name">React</SkillName>
                                             </SkillItemHover>
                                         </Grid>
-                                        <Grid item xs={4} sm={4} md={2}>
+                                        <Grid item xs={3} sm={3} md={2}>
                                             <SkillItemHover>
                                                 <SkillImg src={Git} alt="Git" />
                                                 <SkillName className="skill-name">Git</SkillName>
                                             </SkillItemHover>
                                         </Grid>
-                                        <Grid item xs={4} sm={4} md={2}>
+                                        <Grid item xs={3} sm={3} md={2}>
                                             <SkillItemHover>
                                                 <SkillImg src={GitHub} alt="GitHub" />
                                                 <SkillName className="skill-name">GitHub</SkillName>

@@ -8,7 +8,7 @@
   }
   
   .bm-burger-bars {
-    background: #373a47;
+    background: #000000;
   }
   
   .bm-burger-bars-hover {
@@ -25,13 +25,13 @@
   }
   
   .bm-menu {
-    background: #373a47;
+    background: #0a0a0a;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }
   
   .bm-morph-shape {
-    fill: #373a47;
+    fill: #0a0a0a;
   }
   
   .bm-item-list {
@@ -45,9 +45,11 @@
     margin-bottom: 10px;
     text-decoration: none;
     transition: color 0.2s;
-    border: 1px solid #272931;
+    border: 1px solid #0a0a0a;
     padding: 10px;
     text-align: center;
+    background-color: #1c1c1c;
+    border-radius: 3px;
   }
   
   .bm-item:hover {
