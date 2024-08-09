@@ -1,5 +1,5 @@
 import { Box, Container, Grid, styled, Typography, Button, MenuItem } from "@mui/material";
-import Avatar from "../../../../assets/images/avatar.png";
+import Avatar from "../../../../assets/images/avatarum.png";
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'; 
 import { Link } from 'react-scroll';
 
