@@ -59,7 +59,7 @@ const Hero = () => {
                         <Typography color="primary.contrastText" variant="h1" textAlign="center">Jaqueline Morais</Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pt={3} padding="50px">
                             <Grid item xs={12} md={6} display="flex" justifyContent="center">
-                                <StyledButton onClick={() => window.open("/my_portfolio/JaquelineMoraisFonseca_curriculo.pdf", "_blank")}>
+                                <StyledButton onClick={() => window.open("/my_portfolio/JaquelineMoraisFonsecacurriculo.pdf", "_blank")}>
                                     <DownloadIcon />
                                     <Typography  padding="9px">
                                         Currículo
